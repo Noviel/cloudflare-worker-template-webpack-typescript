@@ -1,6 +1,6 @@
-name = "cloudflare-test"
+name = "cloudflare-typescript"
 type = "webpack"
 zone_id = ""
 private = false
-account_id = "155622c4feb2920dc19c41dac2043c13"
+account_id = ""
 route = ""
