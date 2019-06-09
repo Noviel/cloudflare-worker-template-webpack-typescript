@@ -1,0 +1,40 @@
+{
+    "name": "cloudflare-test",
+    "version": "1.0.0",
+    "description": "A template for kick starting a Cloudflare Workers project",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "format": "lint-staged"
+    },
+    "author": "Alexander Snov <snov.contact@gmail.com>",
+    "license": "MIT",
+    "lint-staged": {
+        "linters": {
+            "*.{js,jsx,ts,tsx}": [
+                "eslint --fix",
+                "prettier --write",
+                "git add"
+            ]
+        },
+        "ignore": [
+            "worker/**.*"
+        ]
+    },
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^1.9.0",
+        "@typescript-eslint/parser": "^1.9.0",
+        "eslint": "^5.16.0",
+        "eslint-config-prettier": "^4.3.0",
+        "eslint-plugin-prettier": "^3.1.0",
+        "husky": "^2.1.0",
+        "lint-staged": "^8.2.0",
+        "prettier": "^1.17.0",
+        "typescript": "^3.5.1"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "npm run format"
+        }
+    }
+}
