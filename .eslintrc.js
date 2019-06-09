@@ -30,7 +30,6 @@ module.exports = {
     '@typescript-eslint/no-parameter-properties': 'disabled',
     '@typescript-eslint/no-var-requires': 'disabled',
     '@typescript-eslint/explicit-function-return-type': 'disabled',
-    'react/prop-types': 'disabled',
     'no-console': 'warn',
   },
 };
